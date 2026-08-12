@@ -1,0 +1,31 @@
+cask "ksamint-markedit" do
+  version "2.5.0"
+  sha256 "8cded61570f84ba3808be02864b3cafa8ddf502c89d305662594269b9c041d5d"
+
+  url "https://github.com/fengurt/ksa-MarkEdit/releases/download/v#{version}/ksamint-MarkEdit-#{version}.dmg"
+  name "ksamint MarkEdit"
+  desc "Fast, native Markdown editor with Chinese, Japanese, and French support"
+  homepage "https://github.com/fengurt/ksa-MarkEdit"
+
+  livecheck do
+    url :url
+    strategy :github_latest
+  end
+
+  depends_on macos: :sequoia
+  depends_on arch: :arm64
+
+  app "ksamint MarkEdit.app"
+
+  zap trash: [
+    "~/Library/Application Scripts/art.apuch.ksamint.markedit.finder-extension",
+    "~/Library/Application Scripts/art.apuch.ksamint.markedit.preview-extension",
+    "~/Library/Application Scripts/group.art.apuch.ksamint.markedit",
+    "~/Library/Containers/art.apuch.ksamint.markedit",
+    "~/Library/Containers/art.apuch.ksamint.markedit.finder-extension",
+    "~/Library/Containers/art.apuch.ksamint.markedit.preview-extension",
+    "~/Library/Group Containers/group.art.apuch.ksamint.markedit",
+    "~/Library/Preferences/art.apuch.ksamint.markedit.plist",
+    "~/Library/Saved Application State/art.apuch.ksamint.markedit.savedState",
+  ]
+end
