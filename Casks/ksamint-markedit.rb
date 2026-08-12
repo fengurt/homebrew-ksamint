@@ -1,6 +1,6 @@
 cask "ksamint-markedit" do
-  version "2.5.0"
-  sha256 "8cded61570f84ba3808be02864b3cafa8ddf502c89d305662594269b9c041d5d"
+  version "2.5.1"
+  sha256 "8fe35a0a5ea02c202a1973536e23eed5210411d0ee5b67ffeef27d2324443979"
 
   url "https://github.com/fengurt/ksa-MarkEdit/releases/download/v#{version}/ksamint-MarkEdit-#{version}.dmg"
   name "ksamint MarkEdit"
