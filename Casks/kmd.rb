@@ -1,9 +1,9 @@
-cask "ksamint-markedit" do
-  version "2.5.1"
-  sha256 "8fe35a0a5ea02c202a1973536e23eed5210411d0ee5b67ffeef27d2324443979"
+cask "kmd" do
+  version "2.5.2"
+  sha256 "412392b376bb40341c6bdc8b77a6112251fa982fc85329a243fe579852d8c518"
 
   url "https://github.com/fengurt/ksa-MarkEdit/releases/download/v#{version}/ksamint-MarkEdit-#{version}.dmg"
-  name "ksamint MarkEdit"
+  name "kmd"
   desc "Fast, native Markdown editor with Chinese, Japanese, and French support"
   homepage "https://github.com/fengurt/ksa-MarkEdit"
 
@@ -15,7 +15,7 @@ cask "ksamint-markedit" do
   depends_on macos: :sequoia
   depends_on arch: :arm64
 
-  app "ksamint MarkEdit.app"
+  app "kmd.app"
 
   zap trash: [
     "~/Library/Application Scripts/art.apuch.ksamint.markedit.finder-extension",
