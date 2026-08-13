@@ -1,6 +1,6 @@
 cask "kmd" do
-  version "2.5.3"
-  sha256 "4b979f55458313ed83721232944784150488590e55fe45c4b08e0ec608711db6"
+  version "2.5.4"
+  sha256 "0af31bd482e9da0bf72824cd698fbc5ecea0da8099741bd3946a2d9365cf2a9c"
 
   url "https://github.com/fengurt/ksa-MarkEdit/releases/download/v#{version}/ksamint-MarkEdit-#{version}.dmg"
   name "kmd"
